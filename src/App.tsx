@@ -17,28 +17,25 @@ function App() {
 
   const projects = [
     {
-      title: "Neural Style Transfer",
-      tech: ["PyTorch", "Python", "Computer Vision"],
-      description: "Developed an artistic image generation system using deep neural networks to seamlessly blend content and style, creating unique visual outputs.",
-      year: "2024"
+      title: "Flood Alert System",
+      tech: ["Node.js", "Python", "Machine Learning", "MongoDB", "React"],
+      description: "A comprehensive real-time flood monitoring, prediction, and alert system powered by ML and AI. Monitors weather conditions in flood-prone Indian cities, predicts flood risks using trained models, and sends personalized email notifications to registered users.",
+      year: "2025",
+      link: "https://github.com/Aparna0224/Flood_Alert"
     },
     {
-      title: "Sentiment Analysis Engine",
-      tech: ["TensorFlow", "NLP", "React"],
-      description: "Built a real-time sentiment analyzer for social media content with an interactive dashboard for data visualization and insights.",
-      year: "2024"
+      title: "RULE - AI Resume Analyzer",
+      tech: ["React", "TypeScript", "AI/LLM", "Node.js", "Docker"],
+      description: "Cutting-edge full-stack application leveraging advanced AI and machine learning for resume processing and candidate evaluation. Features intelligent parsing, 1-10 fit scoring, skill extraction, and real-time analysis with a modern, responsive UI.",
+      year: "2025",
+      link: "https://github.com/MSG-Mutual-Support-to-Grow/rule"
     },
     {
-      title: "Predictive Maintenance System",
-      tech: ["Python", "Machine Learning", "REST APIs"],
-      description: "Designed an IoT-based machine learning system that predicts equipment failures, reducing downtime and maintenance costs.",
-      year: "2023"
-    },
-    {
-      title: "AI Chatbot Framework",
-      tech: ["TensorFlow", "React", "Node.js"],
-      description: "Created a conversational AI framework with context awareness and multi-intent detection for enhanced user interactions.",
-      year: "2023"
+      title: "Currency Exchange Data Warehouse Pipeline",
+      tech: ["Python", "PostgreSQL", "Prefect", "Power BI", "ETL"],
+      description: "End-to-end data engineering project that extracts real-time currency exchange rates, transforms and stores data in PostgreSQL, automates ETL pipeline with Prefect scheduling, and visualizes insights in Power BI dashboards.",
+      year: "2024",
+      link: "https://github.com/Aparna0224/Currency-Exchange-Data-Warehouse-Pipeline"
     }
   ];
 
@@ -202,9 +199,22 @@ function App() {
                       <span className="text-gray-500 text-sm">{project.year}</span>
                     </div>
                     
-                    <h3 className="text-2xl md:text-3xl font-light text-white group-hover:text-green-500 transition-colors">
-                      {project.title}
-                    </h3>
+                    <div className="flex items-center justify-between gap-4">
+                      <h3 className="text-2xl md:text-3xl font-light text-white group-hover:text-green-500 transition-colors">
+                        {project.title}
+                      </h3>
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-shrink-0 p-2 text-gray-400 hover:text-green-500 transition-colors"
+                        title="View on GitHub"
+                      >
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                      </a>
+                    </div>
                     
                     <p className="text-gray-400 leading-relaxed">
                       {project.description}
@@ -294,13 +304,13 @@ function App() {
           </div>
 
           <div className="mt-12 flex justify-center gap-8">
-            <a href="#" className="text-gray-400 hover:text-green-500 transition-colors text-sm uppercase tracking-wide">
+            <a href="https://www.linkedin.com/in/aparna-j-a13647297/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500 transition-colors text-sm uppercase tracking-wide">
               LinkedIn
             </a>
-            <a href="#" className="text-gray-400 hover:text-green-500 transition-colors text-sm uppercase tracking-wide">
+            <a href="https://github.com/Aparna0224  " target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500 transition-colors text-sm uppercase tracking-wide">
               GitHub
             </a>
-            <a href="#" className="text-gray-400 hover:text-green-500 transition-colors text-sm uppercase tracking-wide">
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcRzDsfWlRXCZkGsLmCbhbGpbMRDdJhlnSsxmPPVlgpdrGkDrpxDxFJqjVnZLnxNVNvPXJmxH" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-500 transition-colors text-sm uppercase tracking-wide">
               Email
             </a>
           </div>
